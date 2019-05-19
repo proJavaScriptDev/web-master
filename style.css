@@ -1,0 +1,120 @@
+/* background-layout */
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+/* adding style in app-header */
+
+div#app-header{
+	height: 100px;
+	line-height: 100px;
+	position: relative;
+	background-color: #f30808;
+	color: #fff;
+}
+div#app-header h1{
+	margin: 0;
+}
+div#app-header ul{
+	color: white;
+	position: absolute;
+	right: 0;
+	top: 0px;
+}
+div#app-header li{
+	list-style-type: none;
+	display: inline-block;
+	font-size: 24px;
+	cursor: pointer;
+	margin-right: 15px;
+}
+div#app-header li.links:hover{
+	text-decoration: underline;
+}
+
+/* adding style in app-content */
+
+div#app-content{
+	height: 350px;
+	width: 100%;
+	color: white;
+	margin: 0;
+	background-color: black;
+}
+
+/* using style in footer */
+
+div#app-footer{
+	height: 66px;
+	width: 100%;
+	background-color: rgb(28, 120, 196);
+	color: white;
+	margin: 0;
+	text-align: center;
+	line-height: 66px;
+}
+div#app-footer h2{
+	margin: 0;
+}
+div#sidenav{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+	color: white;
+	background-color: rgb(47, 175, 22);
+	transition: 0.5s;
+}
+div#closeSideNav{
+	font-size: 24px;
+	margin: 25px 0;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	width: 30px;
+}
+div#closeSideNav h2{
+	margin: 0;
+}
+div#sub-container{
+	height: 100%;
+	width: 50%;
+	margin: 0;
+	background-color: dodgerblue;
+	overflow-y: scroll;
+	color: white;
+}
+
+div#sub-container > ul{
+	margin: 0;
+	text-align: center;
+}
+
+div#sub-container > ul > li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+}
+div#sub-container > ul > li.links:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+div#sub-container h2{
+	margin: 0;
+	text-align: center;
+}
+
+/* custom scrollbar design */
+
+::-webkit-scrollbar{
+	background-color: black;
+	width: 10px;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: darkgray;
+}

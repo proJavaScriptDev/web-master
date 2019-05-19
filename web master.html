@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Web Master</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="yellow">
+	<style>
+		@import "style.css"
+	</style>
+</head>
+<body>
+	<div id="app">
+		<div id="sidenav" v-bind:style="{left}">
+			<div id="closeSideNav" @click="closeSideNav"><h2>&times;</h2></div>
+			<div id="sub-container">
+				<h2>HTML</h2>
+				<ul>
+					<li class="links" @click="showHTML('lesson1')">lesson1</li><br>
+					<li class="links" @click="showHTML('lesson2')">lesson2</li><br>
+					<li class="links" @click="showHTML('lesson3')">lesson3</li><br>
+					<li class="links" @click="showHTML('lesson4')">lesson4</li><br>
+					<li class="links" @click="showHTML('lesson5')">lesson5</li><br>
+				</ul>
+
+				<hr color=white>
+
+				<h2>CSS</h2>
+				<ul>
+					<li class="links" @click="showCSS('lesson1')">lesson1</li><br>
+					<li class="links" @click="showCSS('lesson2')">lesson2</li><br>
+					<li class="links" @click="showCSS('lesson3')">lesson3</li><br>
+					<li class="links" @click="showCSS('lesson4')">lesson4</li><br>
+					<li class="links" @click="showCSS('lesson5')">lesson5</li><br>
+				</ul>
+
+				<hr color=white>
+
+				<h2>JavaScript</h2>
+				
+				<ul>
+					<li class="links" @click="showJS('lesson1')">lesson1</li><br>
+					<li class="links" @click="showJS('lesson2')">lesson2</li><br>
+					<li class="links" @click="showJS('lesson3')">lesson3</li><br>
+					<li class="links" @click="showJS('lesson4')">lesson4</li><br>
+					<li class="links" @click="showJS('lesson5')">lesson5</li><br>
+				</ul>
+
+				<hr color=white>
+			</div>
+		</div>
+		<div id="app-header">
+			<h1>Web Master &#9775;</h1>
+			<ul>
+				<li class="links" @click="showHTML('lesson1')">HTML</li>
+				<li class="links">CSS</li>
+				<li class="links">JavaScript</li>
+				<li @click="showSideNav">&#9776;</li>
+			</ul>
+		</div>
+
+		<div id="app-content">
+			{{ dC }}
+		</div>
+
+		<div id="app-footer">
+			<h2>&copy;Copyright</h2>
+		</div>
+	</div>
+	<script src="vue.js"></script>
+
+	<script src="script.js"></script>
+</body>
+</html>
